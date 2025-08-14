@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    gap: 15px;
+}
+
+.labelRegister {
+    font-size: 1.5rem;
+}
+
+.inputRegister {
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.buttonRegister,
+.buttonMain,
+.buttonFight {
+    width: 200px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+.buttonRegister:hover,
+.buttonMain:hover,
+.buttonSettings:hover,
+.buttonFight:hover {
+    background-color: #4d4444;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20px;
+    height: 10vh;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+.containerMain p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.containerCharacter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.containerCharacter img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+    border: 2px solid #333;
+    margin: 0px 20px 0px 20px;
+}
+
+.characterInfo {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.containerSettings {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    padding: 20px 0 0 20px;
+}
+
+.containerSettings h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.containerSettings p {
+    font-size: 1.5rem;
+}
+
+.settingName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonSettings {
+    width: 100px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+.buttonSettings:hover {
+    background-color: #4d4444;
+    color: #fff;
+}
+
+.containerFight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+.containerFight img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+    border: 2px solid #333;
+    margin: 0px 20px 0px 20px;
+}
+
+.fightOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fightOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.attackZone, 
+.defenseZone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.fightOptions h2 {
+    margin-bottom: 20px;
+}
+

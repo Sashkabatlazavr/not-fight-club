@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fight</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="settings.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerFight">
+        <div class="playerFight">
+            <p>Player name</p>
+            <img src="img/character1.png" alt="Character">
+            <p>150/150</p>
+        </div>
+        <div class="fightOptions">
+           <h2>Pick 1 attack zone and 2 defense zones</h2>
+           <div class="fightOptionsContainer">
+            <div class="attackZone">
+                <label for="attackHead">
+                    <input type="radio" name="attackZone" id="attackHead">
+                    Head
+                </label>
+                <label for="attackBody">
+                    <input type="radio" name="attackZone" id="attackBody">
+                    Body
+                </label>
+                <label for="attackLegs">
+                    <input type="radio" name="attackZone" id="attackLegs">
+                    Legs
+                </label>
+                <label for="attackDick">
+                    <input type="radio" name="attackZone" id="attackDick">
+                    Dick
+                </label>
+               </div>
+               <div class="defenseZone">
+                <label for="defenseHead">
+                    <input type="radio" name="defenseZone" id="defenseHead">
+                    Head
+                </label>
+                <label for="defenseBody">
+                    <input type="radio" name="defenseZone" id="defenseBody">
+                    Body
+                </label>
+                <label for="defenseLegs">
+                    <input type="radio" name="defenseZone" id="defenseLegs">
+                    Legs
+                </label>
+                <label for="defenseDick">
+                    <input type="radio" name="defenseZone" id="defenseDick">
+                    Dick
+                </label>
+            </div>
+           </div>
+           <button class="buttonFight">Attack</button>
+        </div>
+        <div class="enemyFight">
+            <p>Player name</p>
+            <img src="img/character1.png" alt="Character">
+            <p>150/150</p>
+        </div>
+    </div>
+</body>
+</html>
