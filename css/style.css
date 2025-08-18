@@ -49,6 +49,7 @@
 .buttonFight:hover {
     background-color: #4d4444;
     color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 header {
@@ -70,6 +71,17 @@ header nav ul {
 header nav ul li {
     list-style: none;
 }
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    color: #afa6a6;
+    transition: color 0.3s ease;
+}
+
 
 .containerMain {
     display: flex;
@@ -166,35 +178,61 @@ header nav ul li {
     height: 500px;
     border-radius: 10%;
     border: 2px solid #333;
-    margin: 0px 20px 0px 20px;
+    margin: 0 0 10px 0;
 }
 
-.fightOptions {
+.descriptionFight {
     display: flex;
+    gap: 20px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 
-.fightOptionsContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+.containerFight p {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
 }
 
-.attackZone, 
-.defenseZone {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.checkbox-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #000000;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0;
 }
 
-.fightOptions h2 {
-    margin-bottom: 20px;
+.checkbox-input:checked {
+    background-color: #4d4444;
+}
+
+.descriptionFight input {
+    font-size: 2.2rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 5px 0 10px;
+    border-radius: 50%;
+}
+
+
+
+.descriptionFight input:hover {
+    transform: scale(1.05);
+}
+.descriptionFight input:checked {
+    accent-color: #4d4444;
+}
+
+
+.buttonMain a {
+    text-decoration: none;
+    color: #fff;
 }
 
