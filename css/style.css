@@ -17,6 +17,10 @@
     color: #333;
     gap: 15px;
 }
+.buttonRegister a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .labelRegister {
     font-size: 1.5rem;
@@ -31,7 +35,8 @@
 
 .buttonRegister,
 .buttonMain,
-.buttonFight {
+.buttonFight,
+.buttonCharacter {
     width: 200px;
     border: 2px solid #333;
     border-radius: 5px;
@@ -46,7 +51,8 @@
 .buttonRegister:hover,
 .buttonMain:hover,
 .buttonSettings:hover,
-.buttonFight:hover {
+.buttonFight:hover,
+.buttonCharacter:hover {
     background-color: #4d4444;
     color: #fff;
     transition: background-color 0.3s ease;
@@ -236,3 +242,52 @@ input[type="checkbox"] {
     color: #fff;
 }
 
+.dialogCharacter {
+    display: none;
+}
+
+
+.activeDiaglog h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.activeDiaglog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    height: 80%;
+    border: 2px solid #333;
+}
+
+.dialogCharacterContent {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.dialogCharacterContent button {
+    margin-left: 50px;
+}
+
+
+.dialogCharacterContent img {
+    margin: 0;
+    padding: 0;
+}
+button:disabled:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+    transition: none !important;
+    cursor: not-allowed !important;
+}
