@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+    <script src="scripts/settings.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,8 +21,10 @@
     <div class="containerSettings">
         <h2>Settings</h2>
         <div class="settingName">
-            <p>Player name: 123</p>
-            <button class="buttonSettings">Edit</button>
+            <p>Player name:</p>
+            <span id="playerNameSettings">ale</span>
+            <input type="text" id="inputPlayerName" placeholder="" class="nameChange hidden">
+            <button class="buttonSettings" id="editPlayerName">Edit</button>
         </div>
     </div>
 </body>
