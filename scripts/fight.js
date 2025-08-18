@@ -1,6 +1,9 @@
 const playerName = document.getElementById('playerName');
 const playerAvatar = document.getElementById('playerAvatar');
 
+let wincounter = localStorage.getItem('wincounter');
+let lostcounter = localStorage.getItem('lostcounter');
+
 window.addEventListener('load', () => { 
     playerName.textContent = localStorage.getItem('playerName');
     playerAvatar.src = localStorage.getItem('currentAvatar');
@@ -17,6 +20,8 @@ const defenseCheckboxes = document.querySelectorAll('input[name="defense"]');
 const attackRadio = document.querySelectorAll('input[name="attack"]');
 const attackButton = document.getElementById('attackButton');
 let enemyRandom = 0;
+
+
 
 
 const enemyDice = () => {
@@ -65,6 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
 
 const fightCalculation = () => {
     let playerAttack = null;
@@ -117,8 +126,23 @@ const fightCalculation = () => {
             playerHealth.textContent = playerHealth.textContent - enemyStats[enemyRandom].dmg;
             console.log('normal hit', enemyStats[enemyRandom].dmg);
         }
-    
+        
+    if (enemyHealth.textContent <= 0) {
+        alert('enemy is dead');
+        attackButton.disabled = true;
+        console.log('wincounter', wincounter);
+        localStorage.setItem('wincounter', (wincounter*1) + 1);
+    }
+    if (playerHealth.textContent <= 0) {
+        alert('player is dead');
+        attackButton.disabled = true;
+        console.log('lostcounter', lostcounter);
+        console.log(typeof lostcounter);
+        localStorage.setItem('lostcounter', (lostcounter*1) + 1);
+    }
 }
+
+
 
 
 attackButton.addEventListener('click', fightCalculation);

@@ -8,7 +8,14 @@ const avatar1Button = document.getElementById('avatar1Button');
 const avatar2Button = document.getElementById('avatar2Button');
 const avatar3Button = document.getElementById('avatar3Button');
 const mainAvatar = document.getElementById('mainAvatar');
-let activeAvatar;
+
+const wincounter = document.getElementById('wincounter');
+const lostcounter = document.getElementById('lostcounter');
+const totalfights = document.getElementById('totalfights');
+const winrate = document.getElementById('winrate');
+
+
+
 
 changeAvatar.addEventListener('click', () => {
     dialog.showModal();
@@ -37,6 +44,10 @@ dialog.addEventListener('click', closeOnBackDropClick);
 window.addEventListener('load', () => { 
     characterName.textContent = localStorage.getItem('playerName');
     mainAvatar.src = localStorage.getItem('currentAvatar');
+    wincounter.textContent = localStorage.getItem('wincounter');
+    lostcounter.textContent = localStorage.getItem('lostcounter');
+    totalfights.textContent = wincounter.textContent + lostcounter.textContent;
+    winrate.textContent = (wincounter.textContent / totalfights.textContent * 100).toFixed(2) + '%';
     activeAvatarButton();
 });
 
