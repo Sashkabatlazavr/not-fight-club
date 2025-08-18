@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fight</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+    <script src="scripts/fight.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,12 +20,12 @@
     </header>
     <div class="containerFight">
         <div class="playerFight">
-            <p>Player name</p>
-            <img src="assets/cat.jpg" alt="Character">
-            <p>150/150</p>
+            <p id="playerName"></p>
+            <img src="assets/cat.jpg" id="playerAvatar" alt="Character">
+            <p id="playerHealth">150</p><span>out of 150 HP</span>
         </div>
         <div class="descriptionFight">
-            <div class="fightOptions">
+            <div class="fightOptions" id="attackOptions">
                 <p>Choose 1 attack option:</p>
                 <input type="radio" name="attack" value="Head"> Head
                 <input type="radio" name="attack" value="Neck"> Neck
@@ -33,7 +33,7 @@
                 <input type="radio" name="attack" value="Balls"> Balls
                 <input type="radio" name="attack" value="Legs"> Legs
             </div>
-            <div class="defenseOptions">
+            <div class="defenseOptions" id="defenseOptions">
                 <p>Choose 2 defense options:</p>
                 <input class="checkbox-input" type="checkbox" name="defense" value="Head"> Head
                 <input class="checkbox-input" type="checkbox" name="defense" value="Neck"> Neck
@@ -41,13 +41,13 @@
                 <input class="checkbox-input" type="checkbox" name="defense" value="Balls"> Balls
                 <input class="checkbox-input" type="checkbox" name="defense" value="Legs"> Legs
             </div>
-            <button class="buttonFight">Attack</button>
+            <button class="buttonFight" id="attackButton">Attack</button>
         </div>
        
         <div class="enemyFight">
-            <p>Player name</p>
-            <img src="assets/cat.jpg" alt="Character">
-            <p>150/150</p>
+            <p id="enemyName"></p>
+            <img src="assets/cat.jpg" id="enemyAvatar" alt="Character">
+            <p id="enemyHealth">150</p><span>out of 150 HP</span>
         </div>
     </div>
 </body>

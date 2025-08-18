@@ -22,8 +22,6 @@ const changingName = () => {
     }
 }
 
-
-
 window.addEventListener('load', () => { 
     playerName.textContent = localStorage.getItem('playerName');
 });

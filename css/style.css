@@ -306,3 +306,10 @@ button:disabled:hover {
 .hidden {
     display: none;
 }
+
+.playerFight, 
+.enemyFight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
