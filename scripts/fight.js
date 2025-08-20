@@ -49,8 +49,8 @@ const enemyDice = () => {
 
 
 const enemyStats = [
-    { dmg: 20, critical: 10, numofattacks: 2, numofdefenses: 1, name: 'Elon Musk'},
-    { dmg: 10, critical: 1, numofattacks: 1, numofdefenses: 4, name: 'Courage the Cowardly Dog'},   
+    { dmg: 20, critical: 10, numofattacks: 3, numofdefenses: 2, name: 'Elon Musk'},
+    { dmg: 10, critical: 100, numofattacks: 3, numofdefenses: 5, name: 'Courage the Cowardly Dog'},   
     { dmg: 30, critical: 25, numofattacks: 3, numofdefenses: 3, name: 'Kaidou of the Beasts'}  
 ];
 
@@ -94,18 +94,26 @@ const fightCalculation = () => {
         }
     });
     const stats = enemyStats[enemyRandom];
+    const attackRadioArray = Array.from(attackRadio);
     let enemyAttacks = [];
     for (let i = stats.numofattacks; i > 0; i--) {
-        const randomAttack = attackRadio[Math.floor(Math.random() * attackRadio.length)];
+        const randomIndex = Math.floor(Math.random() * attackRadioArray.length);
+        let randomAttack = attackRadioArray[randomIndex];
         enemyAttacks.push(randomAttack.value); 
+        attackRadioArray.splice(randomIndex, 1);
     }
     let enemyDefense = [];
+    const defenseCheckboxesArray = Array.from(defenseCheckboxes);
     for (let i = stats.numofdefenses; i > 0; i--) {
-        const randomDefense = defenseCheckboxes[Math.floor(Math.random() * defenseCheckboxes.length)];
+        const randomIndex = Math.floor(Math.random() * defenseCheckboxesArray.length);
+        let randomDefense = defenseCheckboxesArray[randomIndex];
         enemyDefense.push(randomDefense.value);
+        defenseCheckboxesArray.splice(randomIndex, 1);
     }
+    console.log(enemyAttacks);
+    console.log(enemyDefense);
 
-
+    
 
     if (Math.random() < playerStats.critical) {
         enemyHealth.textContent = enemyHealth.textContent - playerStats.dmg * critRate;
