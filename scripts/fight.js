@@ -19,6 +19,10 @@ const defenseOptions = document.getElementById('defenseOptions');
 const defenseCheckboxes = document.querySelectorAll('input[name="defense"]');
 const attackRadio = document.querySelectorAll('input[name="attack"]');
 const attackButton = document.getElementById('attackButton');
+const fightLog = document.getElementById('fightLogText');
+const logMessagePlayer = document.createElement('p');
+const logMessageEnemy = document.createElement('p');
+
 let enemyRandom = 0;
 
 
@@ -39,30 +43,30 @@ const enemyDice = () => {
         enemyName.textContent = enemyStats[2].name;
         enemyRandom = 2;
     }
+    logMessagePlayer.textContent = `You are fighting ${enemyName.textContent}`;
+    fightLog.appendChild(logMessagePlayer);
 }
 
 
 const enemyStats = [
     { dmg: 20, critical: 10, numofattacks: 2, numofdefenses: 1, name: 'Elon Musk'},
     { dmg: 10, critical: 1, numofattacks: 1, numofdefenses: 4, name: 'Courage the Cowardly Dog'},   
-    { dmg: 35, critical: 25, numofattacks: 3, numofdefenses: 3, name: 'Kaidou of the Beasts'}  
+    { dmg: 30, critical: 25, numofattacks: 3, numofdefenses: 3, name: 'Kaidou of the Beasts'}  
 ];
 
     
 const playerStats =  {
-        dmg: 30,
+        dmg: 20,
         critical: 10,
     };
 
 const critRate = 1.5;
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const maxDefenseChoices = 2;
+const maxDefenseChoices = 2;
+document.addEventListener('DOMContentLoaded', function() { 
     defenseCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', function() {
             const checkedBoxes = document.querySelectorAll('input[name="defense"]:checked');
-            
             if (checkedBoxes.length > maxDefenseChoices) {
                 this.checked = false;
                 alert('You can only select 2 defense options!');
@@ -73,9 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
 const fightCalculation = () => {
+    if (document.querySelectorAll('input[name="defense"]:checked').length !== 2 || document.querySelectorAll('input[name="attack"]:checked').length !== 1) {
+        alert('You must select 2 defense options and 1 attack option!');
+    } else {
     let playerAttack = null;
     attackRadio.forEach(radio => {
         if (radio.checked) {
@@ -102,14 +107,9 @@ const fightCalculation = () => {
 
 
 
-    console.log('playerDefense', playerDefense);
-    console.log('playerAttack', playerAttack);
-    console.log('enemyAttacks', enemyAttacks);
-    console.log('enemyDefense', enemyDefense);
-
     if (Math.random() < playerStats.critical) {
         enemyHealth.textContent = enemyHealth.textContent - playerStats.dmg * critRate;
-        console.log('critical hit');
+        console.log('critical hit'); 
     } else if (enemyDefense.includes(playerAttack)) {
         console.log('playerAttack is blocked');  
     } else {
@@ -128,18 +128,21 @@ const fightCalculation = () => {
         }
         
     if (enemyHealth.textContent <= 0) {
+        enemyHealth.textContent = 0;
         alert('enemy is dead');
         attackButton.disabled = true;
         console.log('wincounter', wincounter);
         localStorage.setItem('wincounter', (wincounter*1) + 1);
     }
     if (playerHealth.textContent <= 0) {
+        playerHealth.textContent = 0;
         alert('player is dead');
         attackButton.disabled = true;
         console.log('lostcounter', lostcounter);
         console.log(typeof lostcounter);
         localStorage.setItem('lostcounter', (lostcounter*1) + 1);
     }
+}
 }
 
 

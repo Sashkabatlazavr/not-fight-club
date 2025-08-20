@@ -174,7 +174,7 @@ header nav ul li a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
     background-color: #f0f0f0;
 }
@@ -312,4 +312,29 @@ button:disabled:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.fightLog {
+    height: 20vh;
+    background-color: #e9e1e1;
+}
+
+.fightLog h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+
+.fightLogText {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+.health {
+    display: flex;
+    flex-direction: row;
 }

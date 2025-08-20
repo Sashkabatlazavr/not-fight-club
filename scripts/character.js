@@ -15,7 +15,7 @@ const totalfights = document.getElementById('totalfights');
 const winrate = document.getElementById('winrate');
 
 
-
+let activeAvatar;
 
 changeAvatar.addEventListener('click', () => {
     dialog.showModal();
@@ -42,6 +42,7 @@ function closeOnBackDropClick({ currentTarget, target }) {
 dialog.addEventListener('click', closeOnBackDropClick);
 
 window.addEventListener('load', () => { 
+    
     characterName.textContent = localStorage.getItem('playerName');
     mainAvatar.src = localStorage.getItem('currentAvatar');
     wincounter.textContent = localStorage.getItem('wincounter');
