@@ -4,9 +4,17 @@ const playerAvatar = document.getElementById('playerAvatar');
 let wincounter = localStorage.getItem('wincounter');
 let lostcounter = localStorage.getItem('lostcounter');
 
+const mainAvatar = document.getElementById('playerAvatar');
+
+
+
 window.addEventListener('load', () => { 
     playerName.textContent = localStorage.getItem('playerName');
-    playerAvatar.src = localStorage.getItem('currentAvatar');
+    if (localStorage.getItem('currentAvatar') == null) {
+        mainAvatar.src = 'assets/cat.jpg';
+    } else {
+        mainAvatar.src = localStorage.getItem('currentAvatar');
+    }
     enemyDice();
 });
 
@@ -28,6 +36,7 @@ const enemyHealthBarValue = document.getElementById('enemyHealthBar');
 
 const logMessagePlayerAttack = document.createElement('p');
 const logMessageEnemyAttack = document.createElement('p');
+
 
 
 
