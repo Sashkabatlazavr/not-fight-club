@@ -20,8 +20,16 @@ const defenseCheckboxes = document.querySelectorAll('input[name="defense"]');
 const attackRadio = document.querySelectorAll('input[name="attack"]');
 const attackButton = document.getElementById('attackButton');
 const fightLog = document.getElementById('fightLogText');
-const logMessagePlayer = document.createElement('p');
-const logMessageEnemy = document.createElement('p');
+
+const playerHealthBar = document.getElementById('playerHealthBarContainer');
+const enemyHealthBar = document.getElementById('enemyHealthBarContainer');
+const playerHealthBarValue = document.getElementById('playerHealthBar');
+const enemyHealthBarValue = document.getElementById('enemyHealthBar');
+
+const logMessagePlayerAttack = document.createElement('p');
+const logMessageEnemyAttack = document.createElement('p');
+
+
 
 let enemyRandom = 0;
 
@@ -43,21 +51,21 @@ const enemyDice = () => {
         enemyName.textContent = enemyStats[2].name;
         enemyRandom = 2;
     }
-    logMessagePlayer.textContent = `You are fighting ${enemyName.textContent}`;
-    fightLog.appendChild(logMessagePlayer);
+    logMessagePlayerAttack.textContent = `You are fighting ${enemyName.textContent}`;
+    fightLog.appendChild(logMessagePlayerAttack);
 }
 
 
 const enemyStats = [
-    { dmg: 20, critical: 10, numofattacks: 3, numofdefenses: 2, name: 'Elon Musk'},
-    { dmg: 10, critical: 100, numofattacks: 3, numofdefenses: 5, name: 'Courage the Cowardly Dog'},   
-    { dmg: 30, critical: 25, numofattacks: 3, numofdefenses: 3, name: 'Kaidou of the Beasts'}  
+    { dmg: 20, critical: 10, numofattacks: 1, numofdefenses: 1, name: 'Elon Musk'},
+    { dmg: 10, critical: 1, numofattacks: 1, numofdefenses: 5, name: 'Courage the Cowardly Dog'},   
+    { dmg: 30, critical: 25, numofattacks: 2, numofdefenses: 3, name: 'Kaidou of the Beasts'}  
 ];
 
     
 const playerStats =  {
         dmg: 20,
-        critical: 10,
+        critical: 15,
     };
 
 const critRate = 1.5;
@@ -95,7 +103,7 @@ const fightCalculation = () => {
     });
     const stats = enemyStats[enemyRandom];
     const attackRadioArray = Array.from(attackRadio);
-    let enemyAttacks = [];
+    const enemyAttacks = [];
     for (let i = stats.numofattacks; i > 0; i--) {
         const randomIndex = Math.floor(Math.random() * attackRadioArray.length);
         let randomAttack = attackRadioArray[randomIndex];
@@ -110,45 +118,76 @@ const fightCalculation = () => {
         enemyDefense.push(randomDefense.value);
         defenseCheckboxesArray.splice(randomIndex, 1);
     }
-    console.log(enemyAttacks);
+    console.log('ataki', enemyAttacks);
+    console.log(typeof enemyAttacks);
+    console.log('playerDefense', playerDefense);
     console.log(enemyDefense);
 
     
 
-    if (Math.random() < playerStats.critical) {
+    if (Math.floor(Math.random() * 101) < playerStats.critical) {
         enemyHealth.textContent = enemyHealth.textContent - playerStats.dmg * critRate;
         console.log('critical hit'); 
+        enemyHealthBar.style.transform = `scaleX(${enemyHealth.textContent / 200})`;  
+        logMessagePlayerAttack.innerHTML = `You done <span style="color: green;">critical hit</span> on ${enemyName.textContent} for <span style="color: red;">${playerStats.dmg * critRate} damage</span>`;
+        fightLog.appendChild(logMessageEnemyAttack); 
     } else if (enemyDefense.includes(playerAttack)) {
-        console.log('playerAttack is blocked');  
+        logMessagePlayerAttack.innerHTML = `The enemy <span style="color: orange;">defending ${enemyDefense}</span>, your attack is <span style="color: red;">blocked</span>`;
+        fightLog.appendChild(logMessagePlayerAttack); 
+        console.log('playerAttack is blocked');     
     } else {
         enemyHealth.textContent = enemyHealth.textContent - playerStats.dmg;
         console.log('normal hit');
+        enemyHealthBar.style.transform = `scaleX(${enemyHealth.textContent / 200})`;
+        logMessagePlayerAttack.innerHTML = `<span style="color: green;">You hit ${enemyName.textContent}</span> for <span style="color: red;">${playerStats.dmg} damage</span>, since enemy is defending ${enemyDefense}`;
+        fightLog.appendChild(logMessagePlayerAttack); 
     }
 
-    if (Math.random() < enemyStats[enemyRandom].critical) {
+    if (Math.floor(Math.random() * 101) < enemyStats[enemyRandom].critical) {
         playerHealth.textContent = playerHealth.textContent - enemyStats[enemyRandom].dmg * critRate;
         console.log('critical hit', enemyStats[enemyRandom].dmg * critRate);
-    } else if (playerDefense.includes(enemyAttacks)) {
+        playerHealthBar.style.transform = `scaleX(${playerHealth.textContent / 200})`;   
+        logMessageEnemyAttack.innerHTML = `Enemy done <span style="color: green;">critical hit</span> on you for <span style="color: red;">${enemyStats[enemyRandom].dmg * critRate} damage</span>`;
+        fightLog.appendChild(logMessageEnemyAttack); 
+    } else if (enemyAttacks.every(attack => playerDefense.includes(attack))) {
         console.log('enemyAttack is blocked');
+        logMessageEnemyAttack.innerHTML = `Enemy is attacking <span style="color: red;">${enemyAttacks}</span>, you <span style="color: green;">blocked it</span>`;
+        fightLog.appendChild(logMessageEnemyAttack); 
     } else {
             playerHealth.textContent = playerHealth.textContent - enemyStats[enemyRandom].dmg;
             console.log('normal hit', enemyStats[enemyRandom].dmg);
+            playerHealthBar.style.transform = `scaleX(${playerHealth.textContent / 200})`;
+            logMessageEnemyAttack.innerHTML = `Enemy hit you for <span style="color: red;">${enemyStats[enemyRandom].dmg} damage</span>, attacking <span style="color: red;">${enemyAttacks}</span>`;
+            fightLog.appendChild(logMessageEnemyAttack); 
         }
         
     if (enemyHealth.textContent <= 0) {
         enemyHealth.textContent = 0;
-        alert('enemy is dead');
         attackButton.disabled = true;
         console.log('wincounter', wincounter);
         localStorage.setItem('wincounter', (wincounter*1) + 1);
+        enemyHealthBar.classList.add("hidden");
+        fightLog.innerHTML = '';
+        logMessagePlayerAttack.innerHTML = `<span style="color: green;">You win!</span>`;
+        fightLog.appendChild(logMessagePlayerAttack);
     }
     if (playerHealth.textContent <= 0) {
         playerHealth.textContent = 0;
-        alert('player is dead');
         attackButton.disabled = true;
         console.log('lostcounter', lostcounter);
         console.log(typeof lostcounter);
         localStorage.setItem('lostcounter', (lostcounter*1) + 1);
+        playerHealthBar.classList.add("hidden");
+        fightLog.innerHTML = '';
+        logMessageEnemyAttack.innerHTML = `<span style="color: red;">You lose :(</span>`;
+        fightLog.appendChild(logMessageEnemyAttack);
+    } else if (enemyHealth.textContent == 0 && playerHealth.textContent == 0) {
+        attackButton.disabled = true;
+        playerHealthBar.classList.add("hidden");
+        enemyHealthBar.classList.add("hidden");
+        fightLog.innerHTML = '';
+        logMessageEnemyAttack.innerHTML = `<span style="color: orange;">Its a draw!</span>`;
+        fightLog.appendChild(logMessageEnemyAttack);
     }
 }
 }
