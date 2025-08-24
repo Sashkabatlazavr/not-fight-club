@@ -51,10 +51,13 @@ window.addEventListener('load', () => {
     } else {
         mainAvatar.src = localStorage.getItem('currentAvatar');
     }
-    if (localStorage.getItem('wincounter') == null || localStorage.getItem('wincounter') == null) {
+    if (localStorage.getItem('wincounter') == null) {
         wincounter.textContent = 0;
+    }
+    else if (localStorage.getItem('lostcounter') == null) {
         lostcounter.textContent = 0;
-    } else {
+    }
+    else {
         wincounter.textContent = localStorage.getItem('wincounter');
         lostcounter.textContent = localStorage.getItem('lostcounter');
     }
