@@ -51,8 +51,12 @@ window.addEventListener('load', () => {
     } else {
         mainAvatar.src = localStorage.getItem('currentAvatar');
     }
-    wincounter.textContent = localStorage.getItem('wincounter');
-    lostcounter.textContent = localStorage.getItem('lostcounter');
+    if (localStorage.getItem('wincounter') == null || localStorage.getItem('wincounter') == 0) {
+        localStorage.setItem('wincounter', 0);
+    } else {
+        wincounter.textContent = localStorage.getItem('wincounter');
+        lostcounter.textContent = localStorage.getItem('lostcounter');
+    }
     totalfights.textContent = wincounter.textContent *1 + lostcounter.textContent *1;
     if (totalfights.textContent == 0) {
         winrate.textContent = '0%';
