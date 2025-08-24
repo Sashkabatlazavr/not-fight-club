@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/fight.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fight</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerFight">
+        <div class="playerFight">
+            <p id="playerName"></p>
+            <img src="assets/cat.jpg" id="playerAvatar" alt="Character">
+            <div class="progressContainer" id="playerHealthBarContainer">
+                <div class="progressValue" id="playerHealthBar"></div>
+              </div>
+            <div class="health">
+                <p id="playerHealth">200</p><span>/200 HP</span>
+            </div>
+        </div>
+        <div class="descriptionFight">
+            <div class="fightOptions" id="attackOptions">
+                <p>Choose 1 attack option:</p>
+                <input type="radio" name="attack" value="Head"> Head
+                <input type="radio" name="attack" value="Neck"> Neck
+                <input type="radio" name="attack" value="Body"> Body
+                <input type="radio" name="attack" value="Balls"> Balls
+                <input type="radio" name="attack" value="Legs"> Legs
+            </div>
+            <div class="defenseOptions" id="defenseOptions">
+                <p>Choose 2 defense options:</p>
+                <input class="checkbox-input" type="checkbox" name="defense" value="Head"> Head
+                <input class="checkbox-input" type="checkbox" name="defense" value="Neck"> Neck
+                <input class="checkbox-input" type="checkbox" name="defense" value="Body"> Body
+                <input class="checkbox-input" type="checkbox" name="defense" value="Balls"> Balls
+                <input class="checkbox-input" type="checkbox" name="defense" value="Legs"> Legs
+            </div>
+            <button class="buttonFight" id="attackButton">Attack</button>
+        </div>
+       
+        <div class="enemyFight">
+            <p id="enemyName"></p>
+            <img src="assets/cat.jpg" id="enemyAvatar" alt="Character">
+            <div class="progressContainer" id="enemyHealthBarContainer">
+                <div class="progressValue" id="enemyHealthBar"></div>
+              </div>
+            <div class="health">
+                <p id="enemyHealth">200</p><span>/200 HP</span>
+            </div>
+        </div>
+    </div>
+    <div class="fightLog">
+        <h2 id="fightLog">Fight log:</h2>
+            <div class="fightLogText">
+                <p id="fightLogText"></p>
+            </div>
+    </div>
+</body>
+</html>

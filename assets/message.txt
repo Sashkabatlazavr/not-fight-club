@@ -1,0 +1,114 @@
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/ramki/brite-ramka-1-mestnaya-ip44-ru-1-bra-44-alyuminij-iek
+(24792) BRITE Рамка 1-местная IP44 РУ-1-БрА-44 алюминий ИЭК
+(36214) BRITE Рамка 1-местная IP44 РУ-1-БрА-44 алюминий IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/ramki/brite-ramka-1-mestnaya-ru-1-br-belyijbelyij-iek
+(36151) BRITE Рамка 1-местная РУ-1-Бр белый/белый IEK
+(37138) BRITE Рамка 1 -местная РУ-1-Бр белый/белый ИЭК
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/ramki/brite-ramka-4-mestnaya-ru-4-br-belyijbelyij-iek
+(36128) BRITE Рамка 4-местная РУ-4-Бр белый/белый IEK
+(37140) BRITE Рамка 4 -местная РУ-4-Бр белый/белый ИЭК
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/ramki/resurs-bez-nazvaniya
+(34218) Рамка 2 модуля.Цвет Песочный LIVING NOW Bticino /KA4802KM/
+(34220) Рамка 4 поста (2+2+2+2 модуля).Цвет Песочный LIVING NOW Bticino /KA4802M4KM/
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/rozetki/brite-rozetka-2-mestnaya-bez-zazemleniya-bez-zashhitnyix-shtorok-10a-v-sbore-rs12-2-brkr-bezhevyij-iek
+(36525) BRITE Розетка 2-местная без заземления без защитных шторок 10А в сборе РС12-2-БрКр бежевый IEK
+(37125) BRITE Розетка 2-местная без заземления без защитных шторок 10А в сборе РС12-2-БрКр бежевый ИЭК
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/rozetki/resurs-bez-nazvaniya
+(27730) Розетка TV, проходная, белый /EPH3270321/
+(27774) Розетка комп. RJ45, кат. 5Е, мех, БЕЖЕВЫЙ /ATN000283/
+(27775) Розетка комп. RJ45, кат. 5Е, мех, АЛЮМИНИЙ /ATN000383/
+(27866) Розетка компьютерная RJ45 6 UTP INSPIRIA, алюминий /673827/
+(27868) Розетка компьютерная RJ45 6 UTP INSPIRIA, слоновая кость /673826/
+(27929) Розетка РА 16-213
+(27946) Розетка РС 16-151-18 Wessen
+(34222) Розетка комбинированная 2R+З со встроенным зарядным устройством USB Цвет белый /KW4141USB/
+(34223) Розетка комбинированная 2R+З со встроенным зарядным устройством USB Цвет песочный /KM4141USB/
+(34224) Розетка комбинированная 2R+З со встроенным зарядным устройством USB Цвет черный /KG4141USB/
+(34228) Розетка немецкого стандарта 2К+З 16А винтовые клеммы 2 модуля.Цвет Песочный LIVING NOW Bticino
+(37932) SKANDY Розетка 1-местная с заземлением с защитными шторками и крышкой 16А IP44 SK-R11S серебряный IE
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/brite-vyiklyuchatel-2-klavishnyij-perekrestnyij-10a-vs10-2-3-brkr-bezhevyij-iek
+(37763) BRITE Выключатель 2-клавишный перекрестный 10А ВС10-2-3-БрКр бежевый IEK
+(38181) BRITE Выключатель 2-клавишный перекрестный 10А ВС10-2-3-БрКр бежевый ИЭК
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-1-klavishnyij-10a-fp401-vanil-iek
+(36354) FORTE&PIANO Выключатель 1-клавишный 10А FP401 ваниль IEK
+(36733) FORTE&PIANO Выключатель 1-клавишный 10А FP401 ваниль IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-1-klavishnyij-perekrestnyij-10a-fp412-vanil-iek
+(36292) FORTE&PIANO Выключатель 1-клавишный перекрестный 10А FP412 ваниль IEK
+(37126) FORTE&PIANO Выключатель 1-клавишный перекрестный 10А FP412 ваниль IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-1-klavishnyij-proxodnoj-10a-fp403-vanil-iek
+(36288) FORTE&PIANO Выключатель 1-клавишный проходной 10А FP403 ваниль IEK
+(37127) FORTE&PIANO Выключатель 1-клавишный проходной 10А FP403 ваниль IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-2-klavishnyij-10a-fp405-vanil-iek
+(36330) FORTE&PIANO Выключатель 2-клавишный 10А FP405 ваниль IEK
+(37128) FORTE&PIANO Выключатель 2-клавишный 10А FP405 ваниль IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-2-klavishnyij-perekrestnyij-10a-fp109-chernyij-iek
+(37690) FORTE&PIANO Выключатель 2-клавишный перекрестный 10А FP109 черный IEK
+(38180) FORTE&PIANO Выключатель 2-клавишный перекрестный 10А FP109 черный ИЭК
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/forteandpiano-vyiklyuchatel-2-klavishnyij-proxodnoj-10a-fp407-vanil-iek
+(36296) FORTE&PIANO Выключатель 2-клавишный проходной 10А FP407 ваниль IEK
+(37129) FORTE&PIANO Выключатель 2-клавишный проходной 10А FP407 ваниль IEK
+
+Дубликаты для URI: catalog/elektroustanovochnyie-izdeliya/vyiklyuchateli/vyiklyuchatel-odnoklavishnyij-proxodnoj-w1112001-(belyij)
+(24136) Выключатель одноклавишный проходной/ W1112001 (белый)
+(33085) Выключатель одноклавишный проходной /W1112001 (белый)
+
+Дубликаты для URI: catalog/nizkovoltnoe-oborudovanie/kontaktoryi,-puskateli-i-aksessuaryi-k-nim/kontaktoryi/modulnyij-kontaktor-mk103-032a-230b-20-18071dek
+(28310) Модульный контактор MK103-032A-230B-20 /18071DEK/
+(28311) Модульный контактор MK103-032A-230B-20 /18071DEK/
+
+Дубликаты для URI: catalog/shhitovoe-oborudovanie/shinyi/4-shinyi-s-rezbovyimi-otverstiyami,-160-a,-1000-mm-lvs04161
+(29880) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(30283) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(31280) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(31314) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(31679) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(31990) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(32203) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(33093) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(33795) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(34238) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(34270) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35333) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35431) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35540) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35595) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35619) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35634) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35664) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35696) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35734) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35858) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35921) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(35968) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(36029) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(36078) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(36770) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(36780) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(36894) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(37103) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(37105) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(37149) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(37372) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(37374) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+(38028) 4 шины с резьбовыми отверстиями, 160 A, 1000 мм /LVS04161/
+
+Дубликаты для URI: catalog/svetotexnika/komplektuyushhie-dlya-svetilnikov/resurs-bez-nazvaniya
+(34234) Крепление стыков магнитного шинопровода M-TRACK LEDAR
+(34235) Фиксатор для монтажа магнитного трека M-TRACK черный LEDAR
+(34236) Шинопровод M-TRACK для натяжных потолков встраиваемый черный 2М LEDAR
+
+Дубликаты для URI: catalog/svetotexnika/lampyi/lampa-svetodiodnaya-g45-shar-3vt-230v-3000k-e27-iek
+(36012) Лампа светодиодная G45 шар 3Вт 230В 3000К E27 IEK
+(37123) Лампа светодиодная G45 шар 3Вт 230В 3000К E27 IEK

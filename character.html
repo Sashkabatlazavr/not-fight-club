@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/character.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Character</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerCharacter">
+        <img src="assets/cat.jpg" alt="Character" id="mainAvatar">
+        <div class="characterInfo">
+            <p id="characterName"></p>
+            <p>Wins: <span id="wincounter">0</span></p>
+            <p>Losses: <span id="lostcounter">0</span></p>   
+            <p>Total Fights: <span id="totalfights">0</span></p>
+            <p>Winrate: <span id="winrate">0%</span></p>
+            <button class="buttonCharacter" id="changeAvatar">Change avatar</button>
+        </div>
+        <dialog class="dialogCharacter" id="dialogCharacter">
+            <h2>Change avatar</h2>
+            <div class="dialogCharacterContent">
+                <div>
+                    <img src="assets/cat.jpg" alt="Character" id="avatar1">
+                    <button class="buttonCharacter" id="avatar1Button">Change avatar</button>
+                </div>
+                <div>
+                    <img src="assets/cat2.jpg" alt="Character" id="avatar2">
+                    <button class="buttonCharacter" id="avatar2Button">Change avatar</button>
+                </div>
+                <div>
+                    <img src="assets/ryzhij-milyj-kotik.webp" alt="Character" id="avatar3">
+                    <button class="buttonCharacter" id="avatar3Button">Change avatar</button>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>

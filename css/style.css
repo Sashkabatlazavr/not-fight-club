@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    gap: 15px;
+}
+.buttonRegister a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.labelRegister {
+    font-size: 1.5rem;
+}
+
+.inputRegister {
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.buttonRegister,
+.buttonMain,
+.buttonFight,
+.buttonCharacter {
+    width: 200px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+.buttonRegister:hover,
+.buttonMain:hover,
+.buttonSettings:hover,
+.buttonFight:hover,
+.buttonCharacter:hover {
+    background-color: #4d4444;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20px;
+    height: 10vh;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    color: #afa6a6;
+    transition: color 0.3s ease;
+}
+
+
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+.containerMain p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.containerCharacter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.containerCharacter img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+    border: 2px solid #333;
+    margin: 0px 20px 0px 20px;
+}
+
+.characterInfo {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.containerSettings {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    padding: 20px 0 0 20px;
+}
+
+.containerSettings h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.containerSettings p {
+    font-size: 1.5rem;
+}
+
+.settingName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonSettings {
+    width: 100px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+.buttonSettings:hover {
+    background-color: #4d4444;
+    color: #fff;
+}
+
+.containerFight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+.containerFight img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+    border: 2px solid #333;
+    margin: 0 0 10px 0;
+}
+
+.descriptionFight {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.containerFight p {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.checkbox-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #000000;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-input:checked {
+    background-color: #4d4444;
+}
+
+.descriptionFight input {
+    font-size: 2.2rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 5px 0 10px;
+    border-radius: 50%;
+}
+
+
+
+.descriptionFight input:hover {
+    transform: scale(1.05);
+}
+.descriptionFight input:checked {
+    accent-color: #4d4444;
+}
+
+
+.buttonMain a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dialogCharacter {
+    display: none;
+}
+
+
+.activeDiaglog h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.activeDiaglog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    height: 80%;
+    border: 2px solid #333;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.dialogCharacterContent {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.dialogCharacterContent button {
+    margin-left: 50px;
+}
+
+
+.dialogCharacterContent img {
+    margin: 0;
+    padding: 0;
+}
+button:disabled:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+    transition: none !important;
+    cursor: not-allowed !important;
+}
+
+.nameChange {
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.playerFight, 
+.enemyFight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fightLog {
+    height: 20vh;
+    background-color: #e9e1e1;
+}
+
+.fightLog h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+
+.fightLogText {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+.health {
+    display: flex;
+    flex-direction: row;
+}
+
+.progressContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #4d4444;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
