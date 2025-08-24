@@ -51,7 +51,7 @@ window.addEventListener('load', () => {
     } else {
         mainAvatar.src = localStorage.getItem('currentAvatar');
     }
-    if (localStorage.getItem('wincounter') == null || localStorage.getItem('wincounter') == 0) {
+    if (localStorage.getItem('wincounter') == null || localStorage.getItem('wincounter') == null) {
         localStorage.setItem('wincounter', 0);
     } else {
         wincounter.textContent = localStorage.getItem('wincounter');
