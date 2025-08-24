@@ -1,1 +1,1 @@
-https://sashkabatlazavr.github.io/not-fight-club/
+https://sashkabatlazavr.github.io/not-fight-club/register.html
