@@ -15,6 +15,9 @@ const totalfights = document.getElementById('totalfights');
 const winrate = document.getElementById('winrate');
 
 
+
+
+
 let activeAvatar;
 
 changeAvatar.addEventListener('click', () => {
@@ -42,13 +45,20 @@ function closeOnBackDropClick({ currentTarget, target }) {
 dialog.addEventListener('click', closeOnBackDropClick);
 
 window.addEventListener('load', () => { 
-    
     characterName.textContent = localStorage.getItem('playerName');
-    mainAvatar.src = localStorage.getItem('currentAvatar');
+    if (localStorage.getItem('currentAvatar') == null) {
+        mainAvatar.src = 'assets/cat.jpg';
+    } else {
+        mainAvatar.src = localStorage.getItem('currentAvatar');
+    }
     wincounter.textContent = localStorage.getItem('wincounter');
     lostcounter.textContent = localStorage.getItem('lostcounter');
-    totalfights.textContent = wincounter.textContent + lostcounter.textContent;
-    winrate.textContent = (wincounter.textContent / totalfights.textContent * 100).toFixed(2) + '%';
+    totalfights.textContent = wincounter.textContent *1 + lostcounter.textContent *1;
+    if (totalfights.textContent == 0) {
+        winrate.textContent = '0%';
+    } else {
+        winrate.textContent = (wincounter.textContent / totalfights.textContent * 100).toFixed(2) + '%';
+    }
     activeAvatarButton();
 });
 
